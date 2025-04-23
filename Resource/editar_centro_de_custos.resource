@@ -14,7 +14,7 @@ ${botão_novo_cadastro}    //button[@id='Novo Cadastro']
 
 *** Keywords ***
 Abrir Navegador
-    Open Browser    browser=firefox
+    Open Browser    browser=headlessfirefox
     Maximize Browser Window    #aumentar tela
 Fechar Navegador
     Close Browser
