@@ -36,8 +36,8 @@ Passo 3 - Clicar em Cadastro
     Sleep    1s
 
 Passo 4 - Clicar em Novo Cadastro
-    Wait Until Element Is Visible    id=Novo Cadastro    timeout=10s
-    Click Element    id=Novo Cadastro
+    Wait Until Element Is Visible    locator=//button[@id='save']    timeout=10s
+    Click Element    locator=//button[@id='Novo Cadastro']
 
 
 Passo 5 - Preencher Formulario de Cadastro
@@ -48,7 +48,7 @@ Passo 5 - Preencher Formulario de Cadastro
     Input Text    id=costCentername    ${CENTROCUSTONOME}  
 
 Passo 6 - Salvar Cadastro
-    Click Button    id=save
+    Click Button    locator=//button[@id='save']
 Passo 6.1 - Validação de Mensagem
     Passo 4 - Clicar em Novo Cadastro
     Input Text    id=costCentername    pop
@@ -61,20 +61,20 @@ Passo 7 - Fechar Navegador
 
 Passo 8 - Colocar nome em branco do centro de custos
     Input Text    id=costCentername    ${EMPTY}
-    Click Button    id=save
+    Click Button    locator=//button[@id='save']
     Page Should Contain    O campo diretoria é obrigatório
 
 Passo 9 - Validar letras e números no campo de centro de custo
     Input Text    id=costCentername    text=123abc
-    Click Button    id=save
+    Click Button    locator=//button[@id='save']
     Page Should Contain    O campo 'centro de custos' só pode conter letras e o caractere especial '&'.
 
 Passo 10 - Validar limite de 50 caracteres
     Input Text    id=costCentername   text=CentroCusto123456789012345678901234567890123456789012345
-    Click Button    id=save
+    Click Button    locator=//button[@id='save']
     Page Should Contain    O campo diretoria pode ter no máximo 50 caracteres
 
 Passo 11 - Validar Salvar Centro de Custo
     Input Text    id=costCentername    ${centro_custo_valido}
-    Click Button    id=save
+    Click Button    locator=//button[@id='save']
     Page Should Contain    Centro de Custo atualizado com sucesso!
