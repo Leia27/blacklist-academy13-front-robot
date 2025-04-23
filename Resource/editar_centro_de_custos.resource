@@ -14,7 +14,7 @@ ${botão_novo_cadastro}    //button[@id='Novo Cadastro']
 
 *** Keywords ***
 Abrir Navegador
-    Open Browser    browser=headlessfirefox
+    Open Browser    browser=firefox
     Maximize Browser Window    #aumentar tela
 Fechar Navegador
     Close Browser
@@ -36,8 +36,8 @@ Passo 3 - Clicar em Cadastro
     Sleep    1s
 
 Passo 4 - Clicar em Novo Cadastro
-    Wait Until Element Is Visible    locator=${botão_novo_cadastro} 
-    Click Button    locator=${botão_novo_cadastro}
+    Wait Until Element Is Visible    xpath=${botão_novo_cadastro} 
+    Click Element    xpath=${botão_novo_cadastro}
     Sleep    1s
 
 
