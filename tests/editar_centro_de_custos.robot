@@ -6,14 +6,17 @@ Resource    ../Resource/editar_centro_de_custos.resource
 
 
 CT01 - Salvar Cadastro
-    Passo 1 - Acessar página de login
-    Paso 2 - Preencher campos de login
-    Passo 3 - Clicar em Cadastro  # O teste só vai até aqui, porquee não tem o botão de editar
-    Passo 4 - Clicar em Novo Cadastro
-    Passo 5 - Preencher Formulario de Cadastro
-    Passo 6 - Salvar Cadastro
-    Passo 6.1 - Validação de Mensagem
-    Passo 7 - Fechar Navegador
+    Passo 1 - acessar pagina login QA Coders
+    Passo 2 - Digitar Email QA Coders
+    Passo 3 - Inserir Senha
+    Passo 4 - Clicar Botão Entrar
+    Passo 5 - Clicar em Cadastro
+    Passo 6 - Clicar em Centro de Custo
+    Passo 7 - Clicar Novo Cadastro
+    Passo 8 - Cadastrar Centro de Custo
+    Passo 9 - Clicar Botão Salvar Novo
+    Passo 10 - Validação Centro de Custo Cadastrado
+    Passo 11 - Validação de Mensagem Centro de Custo
     
 CT02 - Validar campo obrigatório
     Passo 1 - Acessar página de login
