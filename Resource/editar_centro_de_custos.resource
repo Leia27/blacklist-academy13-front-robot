@@ -38,6 +38,7 @@ Passo 3 - Clicar em Cadastro
 Passo 4 - Clicar em Novo Cadastro
     Wait Until Element Is Visible    locator=${botão_novo_cadastro} 
     Click Button    locator=${botão_novo_cadastro}
+    Sleep    1s
 
 
 Passo 5 - Preencher Formulario de Cadastro
