@@ -31,12 +31,12 @@ Passo 3 - Clicar em Cadastro
     Wait Until Element Is Visible    xpath=//span[normalize-space()='Cadastros']    timeout=10s  # Primeiro, clicar em "Cadastros" para abrir o menu
     Click Element    xpath=//span[normalize-space()='Cadastros']
     Sleep    1s  # Dá um tempo para o menu abrir
-    Wait Until Element Is Visible    xpath=//span[normalize-space()='Centro de Custo']    timeout=10s
+    Wait Until Element Is Visible    xpath=//span[normalize-space()='Centro de Custo']    
     Click Element    xpath=//span[normalize-space()='Centro de Custo']
     Sleep    1s
 
 Passo 4 - Clicar em Novo Cadastro
-    Wait Until Element Is Visible    locator=//button[@id='Novo Cadastro']    timeout=10s
+    Wait Until Element Is Visible    locator=//button[@id='Novo Cadastro']    
     Click Button    locator=//button[@id='Novo Cadastro']  
 
 

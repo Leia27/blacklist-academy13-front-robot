@@ -15,7 +15,7 @@ CT01 - Salvar Cadastro
     Passo 6.1 - Validação de Mensagem
     Passo 7 - Fechar Navegador
     
-T02 - Validar campo obrigatório
+CT02 - Validar campo obrigatório
     Passo 1 - Acessar página de login
     Paso 2 - Preencher campos de login
     Passo 3 - Clicar em Cadastro
