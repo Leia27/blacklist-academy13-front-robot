@@ -36,7 +36,7 @@ Passo 3 - Clicar em Cadastro
     Sleep    1s
 
 Passo 4 - Clicar em Novo Cadastro
-    Wait Until Element Is Visible    locator=//button[@id='save']    timeout=10s
+    Wait Until Element Is Visible    locator=//button[@id='Novo Cadastro']    timeout=10s
     Click Element    locator=//button[@id='Novo Cadastro']
 
 
