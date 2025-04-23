@@ -10,7 +10,7 @@ ${centro_custo}        Novo Centro de Custo
 ${diretoria}           JJJJJ
 ${centro_custo_valido_50}    CentroCusto12345678901234567890123456789012345678901234
 ${centro_custo_valido}    CentroCustoValid
-
+${botão_novo_cadastro}    //button[@id='Novo Cadastro'] 
 
 *** Keywords ***
 Abrir Navegador
@@ -36,8 +36,8 @@ Passo 3 - Clicar em Cadastro
     Sleep    1s
 
 Passo 4 - Clicar em Novo Cadastro
-    Wait Until Element Is Visible    locator=//button[@id='Novo Cadastro']    
-    Click Button    locator=//button[@id='Novo Cadastro']  
+    Wait Until Element Is Visible    locator=${botão_novo_cadastro} 
+    Click Button    locator=${botão_novo_cadastro}
 
 
 Passo 5 - Preencher Formulario de Cadastro
@@ -67,7 +67,9 @@ Passo 8 - Colocar nome em branco do centro de custos
 Passo 9 - Validar letras e números no campo de centro de custo
     Input Text    id=costCentername    text=123abc
     Click Button    locator=//button[@id='save']
-    Page Should Contain    O campo 'centro de custos' só pode conter letras e o caractere especial '&'.
+    Wait Until Page Contains    text=O campo 'centro de custos' só pode conter letras e o caractere especial '&'.
+    Wait Until Page Contains Element    locator=//div[@class='MuiAlert-message css-1xsto0d']
+    Sleep    1s
 
 Passo 10 - Validar limite de 50 caracteres
     Input Text    id=costCentername   text=CentroCusto123456789012345678901234567890123456789012345
