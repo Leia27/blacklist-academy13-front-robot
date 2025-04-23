@@ -1,0 +1,20 @@
+1745447529649	geckodriver	INFO	Listening on 127.0.0.1:50698
+1745447532730	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "50699" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\leias\\AppData\\Local\\Temp\\rust_mozprofilejkMxRY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1745447533054	Marionette	INFO	Marionette enabled
+1745447533167	Marionette	INFO	Listening on port 50706
+WebDriver BiDi listening on ws://127.0.0.1:50699
+Read port: 50706
+1745447533349	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50699/devtools/browser/9229c3ab-3566-4ef7-a89f-8736c0c97201
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://black-list-front.qacoders.dev.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://black-list-front.qacoders.dev.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://black-list-front.qacoders.dev.br."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://black-list-front.qacoders.dev.br."
+1745447539378	Marionette	INFO	Stopped listening on port 50706
+Dynamically enable window occlusion 1

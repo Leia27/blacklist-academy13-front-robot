@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.10 on win32)" generated="2025-04-23T19:36:53.067436" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\leias\OneDrive\Qa.Academy\blacklist-academy13-front-robot\tests">
+<suite id="s1-s1" name="Editar Centro De Custos" source="C:\Users\leias\OneDrive\Qa.Academy\blacklist-academy13-front-robot\tests\editar_centro_de_custos.robot">
+<test id="s1-s1-t1" name="CT01 - Salvar Cadastro" line="8">
+<kw name="Abrir Navegador" owner="editar_centro_de_custos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:53.401433" level="INFO">Opening browser 'headlessfirefox' to base url 'None'.</msg>
+<arg>browser=headlessfirefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:36:53.401433" elapsed="4.939038"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T19:36:58.340471" elapsed="0.003216"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:36:53.401433" elapsed="4.942254"/>
+</kw>
+<kw name="Passo 1 - Acessar página de login" owner="editar_centro_de_custos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:58.345024" level="INFO">Opening url 'https://black-list-front.qacoders.dev.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:36:58.345024" elapsed="0.442170"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:36:58.345024" elapsed="0.442170"/>
+</kw>
+<kw name="Paso 2 - Preencher campos de login" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:58.789200" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:36:58.788200" elapsed="0.163733"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:58.952933" level="INFO">Typing text '1234@Test' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:36:58.951933" elapsed="0.062799"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:59.015740" level="INFO">Clicking button 'xpath=//button[text()='Entrar']'.</msg>
+<arg>xpath=//button[text()='Entrar']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:36:59.014732" elapsed="0.245362"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:36:58.788200" elapsed="0.471894"/>
+</kw>
+<kw name="Passo 3 - Clicar em Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:36:59.260607" elapsed="0.215341"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:36:59.476952" level="INFO">Clicking element 'xpath=//span[normalize-space()='Cadastros']'.</msg>
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:36:59.475948" elapsed="0.229926"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:00.706347" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:36:59.705874" elapsed="1.000473"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:00.706866" elapsed="0.011358"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:00.719615" level="INFO">Clicking element 'xpath=//span[normalize-space()='Centro de Custo']'.</msg>
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:00.718224" elapsed="0.228102"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:01.946480" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:00.946326" elapsed="1.000154"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:36:59.260607" elapsed="2.685873"/>
+</kw>
+<kw name="Passo 4 - Clicar em Novo Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Novo Cadastro</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:01.947079" elapsed="0.011342"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:01.958421" level="INFO">Clicking element 'id=Novo Cadastro'.</msg>
+<arg>id=Novo Cadastro</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:01.958421" elapsed="0.247904"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:01.947079" elapsed="0.259246"/>
+</kw>
+<kw name="Passo 5 - Preencher Formulario de Cadastro" owner="editar_centro_de_custos">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-04-23T19:37:02.207445" level="INFO">${palavra_randomica} = ekgpBwvwrQ</msg>
+<var>${palavra_randomica}</var>
+<arg>length=10</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.207445" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2025-04-23T19:37:02.207445" level="INFO">${palavra_randomica} = ekgpbwvwrq</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.207445" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-04-23T19:37:02.208446" level="INFO">${CENTROCUSTONOME} = ekgpbwvwrq</msg>
+<arg>${CENTROCUSTONOME}</arg>
+<arg>${palavra_randomica}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.208446" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-23T19:37:02.208446" level="INFO">ekgpbwvwrq</msg>
+<arg>${CENTROCUSTONOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.208446" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:02.209633" level="INFO">Typing text 'ekgpbwvwrq' into text field 'id=costCentername'.</msg>
+<arg>id=costCentername</arg>
+<arg>${CENTROCUSTONOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.208446" elapsed="0.044693"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:02.206325" elapsed="0.046814"/>
+</kw>
+<kw name="Passo 6 - Salvar Cadastro" owner="editar_centro_de_custos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:02.253139" level="INFO">Clicking button 'id=save'.</msg>
+<arg>id=save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.253139" elapsed="0.248690"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:02.253139" elapsed="0.248690"/>
+</kw>
+<kw name="Passo 6.1 - Validação de Mensagem" owner="editar_centro_de_custos">
+<kw name="Passo 4 - Clicar em Novo Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Novo Cadastro</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.503934" elapsed="0.008987"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:02.514199" level="INFO">Clicking element 'id=Novo Cadastro'.</msg>
+<arg>id=Novo Cadastro</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.514199" elapsed="0.240470"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:02.502816" elapsed="0.251853"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:02.755692" level="INFO">Typing text 'pop' into text field 'id=costCentername'.</msg>
+<arg>id=costCentername</arg>
+<arg>pop</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.754669" elapsed="0.019201"/>
+</kw>
+<kw name="Passo 6 - Salvar Cadastro" owner="editar_centro_de_custos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:02.773870" level="INFO">Clicking button 'id=save'.</msg>
+<arg>id=save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:02.773870" elapsed="0.229805"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:02.773870" elapsed="0.229805"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='MuiAlert-message css-1xsto0d']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:03.004725" elapsed="0.011711"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Não é possível salvar esse registro. Centro de custos já cadastrado no sistema.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-23T19:37:03.016436" elapsed="0.004366"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:02.502816" elapsed="0.517986"/>
+</kw>
+<kw name="Passo 7 - Fechar Navegador" owner="editar_centro_de_custos">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T19:37:03.021802" elapsed="2.686820"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:03.020802" elapsed="2.688334"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:36:53.400020" elapsed="12.309629"/>
+</test>
+<test id="s1-s1-t2" name="T02 - Validar campo obrigatório" line="18">
+<kw name="Abrir Navegador" owner="editar_centro_de_custos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:05.711654" level="INFO">Opening browser 'headlessfirefox' to base url 'None'.</msg>
+<arg>browser=headlessfirefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:05.711654" elapsed="4.775185"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T19:37:10.486839" elapsed="0.002033"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:05.710656" elapsed="4.778216"/>
+</kw>
+<kw name="Passo 1 - Acessar página de login" owner="editar_centro_de_custos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:10.489885" level="INFO">Opening url 'https://black-list-front.qacoders.dev.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:10.489885" elapsed="0.686533"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:10.489885" elapsed="0.686533"/>
+</kw>
+<kw name="Paso 2 - Preencher campos de login" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:11.177980" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:11.177980" elapsed="0.121101"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:11.299081" level="INFO">Typing text '1234@Test' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:11.299081" elapsed="0.056151"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:11.355232" level="INFO">Clicking button 'xpath=//button[text()='Entrar']'.</msg>
+<arg>xpath=//button[text()='Entrar']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:11.355232" elapsed="0.286395"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:11.177980" elapsed="0.463647"/>
+</kw>
+<kw name="Passo 3 - Clicar em Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:11.642675" elapsed="0.214980"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:11.858696" level="INFO">Clicking element 'xpath=//span[normalize-space()='Cadastros']'.</msg>
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:11.858696" elapsed="0.236130"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:13.095539" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:12.094826" elapsed="1.000713"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:13.096048" elapsed="0.012543"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:13.109678" level="INFO">Clicking element 'xpath=//span[normalize-space()='Centro de Custo']'.</msg>
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:13.109678" elapsed="0.226811"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:14.336671" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:13.336489" elapsed="1.000182"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:11.641627" elapsed="2.695044"/>
+</kw>
+<kw name="Passo 4 - Clicar em Novo Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Novo Cadastro</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.337689" elapsed="0.010600"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:14.348289" level="INFO">Clicking element 'id=Novo Cadastro'.</msg>
+<arg>id=Novo Cadastro</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.348289" elapsed="0.244030"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:14.337689" elapsed="0.254630"/>
+</kw>
+<kw name="Passo 8 - Colocar nome em branco do centro de custos" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:14.594103" level="INFO">Typing text '' into text field 'id=costCentername'.</msg>
+<arg>id=costCentername</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.593590" elapsed="0.033159"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:14.626749" level="INFO">Clicking button 'id=save'.</msg>
+<arg>id=save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.626749" elapsed="0.261348"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:14.897906" level="INFO">Current page contains text 'O campo diretoria é obrigatório'.</msg>
+<arg>O campo diretoria é obrigatório</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.888097" elapsed="0.009809"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:14.592319" elapsed="0.306576"/>
+</kw>
+<kw name="Passo 7 - Fechar Navegador" owner="editar_centro_de_custos">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T19:37:14.899907" elapsed="2.653859"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:14.898895" elapsed="2.654871"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:05.709649" elapsed="11.844117"/>
+</test>
+<test id="s1-s1-t3" name="CT03 - Validar letras e números no campo de centro de custo" line="25">
+<kw name="Abrir Navegador" owner="editar_centro_de_custos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:17.555769" level="INFO">Opening browser 'headlessfirefox' to base url 'None'.</msg>
+<arg>browser=headlessfirefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:17.555769" elapsed="4.783992"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T19:37:22.339761" elapsed="0.003861"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:17.555769" elapsed="4.787853"/>
+</kw>
+<kw name="Passo 1 - Acessar página de login" owner="editar_centro_de_custos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:22.344642" level="INFO">Opening url 'https://black-list-front.qacoders.dev.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:22.344642" elapsed="0.551549"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:22.343622" elapsed="0.553568"/>
+</kw>
+<kw name="Paso 2 - Preencher campos de login" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:22.898194" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:22.898194" elapsed="0.160748"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:23.060410" level="INFO">Typing text '1234@Test' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:23.058942" elapsed="0.045325"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:23.105325" level="INFO">Clicking button 'xpath=//button[text()='Entrar']'.</msg>
+<arg>xpath=//button[text()='Entrar']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:23.105325" elapsed="0.268067"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:22.897190" elapsed="0.477248"/>
+</kw>
+<kw name="Passo 3 - Clicar em Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:23.374438" elapsed="0.230393"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:23.604831" level="INFO">Clicking element 'xpath=//span[normalize-space()='Cadastros']'.</msg>
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:23.604831" elapsed="0.250018"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:24.855398" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:23.854849" elapsed="1.000549"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:24.855941" elapsed="0.012582"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:24.868523" level="INFO">Clicking element 'xpath=//span[normalize-space()='Centro de Custo']'.</msg>
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:24.868523" elapsed="0.230642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:26.099283" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:25.099165" elapsed="1.000118"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:23.374438" elapsed="2.724845"/>
+</kw>
+<kw name="Passo 4 - Clicar em Novo Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Novo Cadastro</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.099283" elapsed="0.013105"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:26.112388" level="INFO">Clicking element 'id=Novo Cadastro'.</msg>
+<arg>id=Novo Cadastro</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.112388" elapsed="0.231175"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:26.099283" elapsed="0.244792"/>
+</kw>
+<kw name="Passo 9 - Validar letras e números no campo de centro de custo" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:26.344075" level="INFO">Typing text '123abc' into text field 'id=costCentername'.</msg>
+<arg>id=costCentername</arg>
+<arg>text=123abc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.344075" elapsed="0.038655"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:26.383741" level="INFO">Clicking button 'id=save'.</msg>
+<arg>id=save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.383741" elapsed="0.238029"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:26.632029" level="INFO">Current page contains text 'O campo 'centro de custos' só pode conter letras e o caractere especial '&amp;'.'.</msg>
+<arg>O campo 'centro de custos' só pode conter letras e o caractere especial '&amp;'.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.623281" elapsed="0.008748"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:26.344075" elapsed="0.288954"/>
+</kw>
+<kw name="Passo 7 - Fechar Navegador" owner="editar_centro_de_custos">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T19:37:26.633029" elapsed="2.785879"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:26.633029" elapsed="2.787132"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:17.554786" elapsed="11.865375"/>
+</test>
+<test id="s1-s1-t4" name="CT04 - Validar limite de 50 caracteres" line="33">
+<kw name="Abrir Navegador" owner="editar_centro_de_custos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:29.421167" level="INFO">Opening browser 'headlessfirefox' to base url 'None'.</msg>
+<arg>browser=headlessfirefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:29.421167" elapsed="4.796692"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T19:37:34.217859" elapsed="0.002181"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:29.421167" elapsed="4.798873"/>
+</kw>
+<kw name="Passo 1 - Acessar página de login" owner="editar_centro_de_custos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:34.221045" level="INFO">Opening url 'https://black-list-front.qacoders.dev.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-23T19:37:34.221045" elapsed="0.514535"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:34.221045" elapsed="0.514535"/>
+</kw>
+<kw name="Paso 2 - Preencher campos de login" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:34.737580" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:34.737580" elapsed="0.171128"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:34.909712" level="INFO">Typing text '1234@Test' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:34.908708" elapsed="0.070042"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:34.978750" level="INFO">Clicking button 'xpath=//button[text()='Entrar']'.</msg>
+<arg>xpath=//button[text()='Entrar']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:34.978750" elapsed="0.299098"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:34.736579" elapsed="0.541269"/>
+</kw>
+<kw name="Passo 3 - Clicar em Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:35.278847" elapsed="0.213744"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:35.493608" level="INFO">Clicking element 'xpath=//span[normalize-space()='Cadastros']'.</msg>
+<arg>xpath=//span[normalize-space()='Cadastros']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:35.493608" elapsed="0.251951"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:36.746919" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:35.746573" elapsed="1.000346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:36.746919" elapsed="0.010907"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:36.758844" level="INFO">Clicking element 'xpath=//span[normalize-space()='Centro de Custo']'.</msg>
+<arg>xpath=//span[normalize-space()='Centro de Custo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:36.758844" elapsed="0.229446"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T19:37:37.988739" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T19:37:36.988290" elapsed="1.000449"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:35.277848" elapsed="2.710891"/>
+</kw>
+<kw name="Passo 4 - Clicar em Novo Cadastro" owner="editar_centro_de_custos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=Novo Cadastro</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T19:37:37.989758" elapsed="0.010251"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:38.001328" level="INFO">Clicking element 'id=Novo Cadastro'.</msg>
+<arg>id=Novo Cadastro</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:38.000009" elapsed="0.248265"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:37.988739" elapsed="0.260823"/>
+</kw>
+<kw name="Passo 10 - Validar limite de 50 caracteres" owner="editar_centro_de_custos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:38.250065" level="INFO">Typing text 'CentroCusto123456789012345678901234567890123456789012345' into text field 'id=costCentername'.</msg>
+<arg>id=costCentername</arg>
+<arg>text=CentroCusto123456789012345678901234567890123456789012345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:38.250065" elapsed="0.083992"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:38.334679" level="INFO">Clicking button 'id=save'.</msg>
+<arg>id=save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T19:37:38.334057" elapsed="0.245305"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-23T19:37:38.586121" level="INFO">Current page contains text 'O campo diretoria pode ter no máximo 50 caracteres'.</msg>
+<arg>O campo diretoria pode ter no máximo 50 caracteres</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-23T19:37:38.579362" elapsed="0.006759"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:38.249562" elapsed="0.336559"/>
+</kw>
+<kw name="Passo 7 - Fechar Navegador" owner="editar_centro_de_custos">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T19:37:38.586121" elapsed="2.666428"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:38.586121" elapsed="2.666428"/>
+</kw>
+<status status="PASS" start="2025-04-23T19:37:29.420161" elapsed="11.833397"/>
+</test>
+<status status="PASS" start="2025-04-23T19:36:53.100481" elapsed="48.154067"/>
+</suite>
+<status status="PASS" start="2025-04-23T19:36:53.068933" elapsed="48.185615"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="4" fail="0" skip="0">Tests</stat>
+<stat name="Editar Centro De Custos" id="s1-s1" pass="4" fail="0" skip="0">Tests.Editar Centro De Custos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
